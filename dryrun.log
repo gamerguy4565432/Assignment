@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jordan/CS-2810/c-maze-solver'
+gcc -g -Os -std=c99 -Wpedantic -Wall -Wextra -Werror main.c -c -o main.o
+gcc -g -Os -std=c99 -Wpedantic -Wall -Wextra -Werror solve.c -c -o solve.o
+gcc -g -Os -std=c99 -Wpedantic -Wall -Wextra -Werror main.o solve.o -o a.out
+python3 lib/inout-stepall.py input ./a.out
+make: Leaving directory '/home/jordan/CS-2810/c-maze-solver'
+ 
